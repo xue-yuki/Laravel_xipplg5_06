@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudioCode - Bring Your Ideas to Life</title>
+    
+    <!-- Impor Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Impor Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-[#1a103c] via-[#0b091a] to-[#121a41] text-gray-200 overflow-x-hidden antialiased">
+
+    <!-- Wrapper utama -->
+    <div class="relative w-full flex flex-col items-center">
+
+        <!-- Elemen Grafis Latar Belakang -->
+        <div class="absolute top-10 right-10 md:top-20 md:right-20 transform-gpu -translate-y-1/2 opacity-60 z-0">
+            <div class="w-24 h-24 md:w-32 md:h-32 glass-effect rounded-2xl transform rotate-45"></div>
+        </div>
+        <div class="absolute bottom-1/4 left-0 transform-gpu -translate-x-1/4 opacity-20 z-0">
+            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs><pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(107, 114, 128, 0.5)" stroke-width="0.5"/></pattern></defs>
+                <circle cx="200" cy="200" r="190" fill="none" stroke="rgba(107, 114, 128, 0.3)" stroke-width="1"/>
+                <rect width="400" height="400" fill="url(#grid)" mask="url(#circle-mask)"/>
+                <mask id="circle-mask"><circle cx="200" cy="200" r="200" fill="white"/></mask>
+            </svg>
+        </div>
+        <div class="absolute bottom-0 right-0 transform-gpu translate-x-1/4 translate-y-1/4 opacity-50 z-0">
+             <svg width="300" height="300" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_f_10_1)"><path d="M100 0L200 50V150L100 200L0 150V50L100 0Z" fill="url(#paint0_linear_10_1)"/><path d="M100 0L0 50V150L100 200L200 150V50L100 0Z" stroke="url(#paint1_linear_10_1)" stroke-width="2"/></g>
+                <defs><filter id="filter0_f_10_1" x="-50" y="-50" width="300" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_10_1"/></filter><linearGradient id="paint0_linear_10_1" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="#A855F7" stop-opacity="0.2"/><stop offset="1" stop-color="#3B82F6" stop-opacity="0.1"/></linearGradient><linearGradient id="paint1_linear_10_1" x1="100" y1="0" x2="100" y2="200" gradientUnits="userSpaceOnUse"><stop stop-color="white" stop-opacity="0.3"/><stop offset="1" stop-color="white" stop-opacity="0.1"/></linearGradient></defs>
+            </svg>
+        </div>
+
+        <!-- Konten Utama -->
+        <div class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Header dan Navigasi -->
+            <header class="py-6 sticky top-4 z-50">
+                <nav id="navbar" class="flex items-center justify-between bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-white/10 rounded-full px-4 py-2 transition-all duration-300">
+                    <div class="text-2xl font-bold tracking-wider pl-4">StudioCode</div>
+                    <div class="hidden md:flex items-center">
+                        <ul class="flex items-center space-x-2">
+                            <li><a href="#home" class="nav-link px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300">Home</a></li>
+                            <li><a href="#about" class="nav-link px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300">About</a></li>
+                            <li><a href="#services" class="nav-link px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300">Services</a></li>
+                            <li><a href="#pricing" class="nav-link px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300">Pricing</a></li>
+                            <li><a href="#contact" class="nav-link px-4 py-2 rounded-full hover:bg-white/10 transition-colors duration-300">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="md:hidden pr-4"><button class="text-white focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg></button></div>
+                </nav>
+            </header>
+
+            <!-- Enhanced Hero Section -->
+            <main id="home" class="min-h-screen flex items-center justify-center text-center -mt-20 relative overflow-hidden">
+                <!-- Hero Background Pattern -->
+                <div class="hero-bg-pattern"></div>
+                
+                <!-- Hero Glow Effect -->
+                <div class="hero-glow"></div>
+                
+                <!-- Floating Particles -->
+                <div class="hero-particles">
+                    <div class="particle w-3 h-3" style="left: 10%; animation-delay: 0s;"></div>
+                    <div class="particle w-2 h-2" style="left: 20%; animation-delay: 1s;"></div>
+                    <div class="particle w-4 h-4" style="left: 30%; animation-delay: 2s;"></div>
+                    <div class="particle w-2 h-2" style="left: 40%; animation-delay: 3s;"></div>
+                    <div class="particle w-3 h-3" style="left: 60%; animation-delay: 1.5s;"></div>
+                    <div class="particle w-2 h-2" style="left: 70%; animation-delay: 2.5s;"></div>
+                    <div class="particle w-4 h-4" style="left: 80%; animation-delay: 0.5s;"></div>
+                    <div class="particle w-2 h-2" style="left: 90%; animation-delay: 3.5s;"></div>
+                </div>
+
+                <!-- Floating Geometric Shapes -->
+                <div class="floating-elements">
+                    <div class="floating-shape w-16 h-16 border-2 border-purple-400" style="left: 5%; animation-delay: 0s;"></div>
+                    <div class="floating-shape w-12 h-12 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full" style="left: 15%; animation-delay: 2s;"></div>
+                    <div class="floating-shape w-20 h-20 border border-blue-400 transform rotate-45" style="right: 10%; animation-delay: 1s;"></div>
+                    <div class="floating-shape w-8 h-8 bg-gradient-to-r from-blue-400 to-indigo-500 rounded-full" style="right: 25%; animation-delay: 3s;"></div>
+                </div>
+
+                <div class="max-w-4xl relative z-10">
+                    <!-- Main Hero Content -->
+                    <div class="space-y-8">
+                        <!-- Animated Badge -->
+                        <div class="hero-text-fade inline-flex items-center px-6 py-3 rounded-full glass-effect border border-purple-400/30 text-sm font-medium text-purple-300 mb-8">
+                            <svg class="w-4 h-4 mr-2 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                            </svg>
+                            <span id="hero-badge">Transforming Ideas Into Reality</span>
+                        </div>
+
+                        <!-- Main Heading with Typing Effect -->
+                        <h1 class="hero-text-fade delay-1 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                            Bring Your Ideas to Life with 
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 typing-effect" id="company-name">StudioCode</span>
+                        </h1>
+
+                        <!-- Subtitle with Rotating Text -->
+                        <p class="hero-text-fade delay-2 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+                            We help you <span id="rotating-text" class="text-purple-400 font-semibold">build</span>, design, and solve with cutting-edge technology
+                        </p>
+
+                        <!-- Action Buttons -->
+                        <div class="hero-text-fade delay-3 flex flex-col sm:flex-row gap-4 justify-center items-center mt-10">
+                            <a href="#contact" class="interactive-button group inline-flex items-center bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-semibold rounded-full px-8 py-4 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25">
+                                <span class="mr-2">Get Started</span>
+                                <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </a>
+                            <a href="#about" class="interactive-button group inline-flex items-center bg-transparent border-2 border-gray-300 text-gray-300 font-semibold rounded-full px-8 py-4 hover:bg-white hover:text-gray-900 hover:border-white transition-all duration-300 transform hover:scale-105">
+                                <svg class="w-5 h-5 mr-2 group-hover:animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M12 5C8.686 5 6 7.686 6 11a4.98 4.98 0 001.063 3.065A1 1 0 006 16v2a1 1 0 001 1h10a1 1 0 001-1v-2a1 1 0 00-1.063-1.935A4.98 4.98 0 0018 11c0-3.314-2.686-6-6-6z"/>
+                                </svg>
+                                <span>Learn More</span>
+                            </a>
+                        </div>
+
+                        <!-- Hero Stats -->
+                        <div class="hero-stats grid grid-cols-3 gap-8 mt-16 pt-8 border-t border-white/10">
+                            <div class="text-center">
+                                <div class="stat-counter text-3xl md:text-4xl font-bold text-white" data-target="150">0</div>
+                                <div class="text-sm text-gray-400 mt-1">Projects Completed</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="stat-counter text-3xl md:text-4xl font-bold text-white" data-target="98">0</div>
+                                <div class="text-sm text-gray-400 mt-1">Client Satisfaction</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="stat-counter text-3xl md:text-4xl font-bold text-white" data-target="24">0</div>
+                                <div class="text-sm text-gray-400 mt-1">Support Hours</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- About Section -->
+            <section id="about" class="py-24 sm:py-32">
+                <div class="text-center reveal">
+                    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">Tentang <span class="text-purple-400">StudioCode</span></h1>
+                    <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Kami adalah tim inovator, desainer, dan pemecah masalah yang bersemangat dalam mengubah ide menjadi kenyataan digital.</p>
+                </div>
+                <div class="mt-20 text-center reveal">
+                    <h2 class="text-3xl font-bold tracking-tight text-white">Misi Kami</h2>
+                    <p class="mt-4 text-lg text-gray-400 max-w-3xl mx-auto">
+                        Untuk memberdayakan bisnis dan individu dengan solusi teknologi yang dibuat khusus, intuitif, dan berdampak, mendorong pertumbuhan dan kesuksesan di dunia yang terus berkembang.
+                    </p>
+                </div>
+                <div class="mt-20 reveal">
+                    <h2 class="text-3xl font-bold tracking-tight text-center text-white">Temui Tim Kami</h2>
+                    <div class="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3" style="perspective: 1000px;">
+                        <div class="card-3d bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/100x100/3B82F6/FFFFFF?text=EG" alt="Foto profil Aria Vesta" onerror="this.onerror=null;this.src='https://placehold.co/100x100/3B82F6/FFFFFF?text=AV';">
+                            <h3 class="mt-6 text-xl font-semibold text-white">Erlangga</h3>
+                            <p class="mt-1 text-purple-400">CEO & Lead Developer</p>
+                            <p class="mt-4 text-gray-400 text-sm">Dengan pengalaman lebih dari satu dekade, Erlangga memimpin visi teknis dan strategis perusahaan.</p>
+                        </div>
+                        <div class="card-3d bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/100x100/A855F7/FFFFFF?text=RG" alt="Foto profil Bima Nugraha" onerror="this.onerror=null;this.src='https://placehold.co/100x100/A855F7/FFFFFF?text=BN';">
+                            <h3 class="mt-6 text-xl font-semibold text-white">Rangga</h3>
+                            <p class="mt-1 text-purple-400">Head of Design</p>
+                            <p class="mt-4 text-gray-400 text-sm">Rangga adalah otak kreatif di balik antarmuka yang indah dan pengalaman pengguna yang mulus.</p>
+                        </div>
+                        <div class="card-3d bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/100x100/10B981/FFFFFF?text=AZ" alt="Foto profil Citra Lestari" onerror="this.onerror=null;this.src='https://placehold.co/100x100/10B981/FFFFFF?text=CL';">
+                            <h3 class="mt-6 text-xl font-semibold text-white">Azzam</h3>
+                            <p class="mt-1 text-purple-400">Project Manager</p>
+                            <p class="mt-4 text-gray-400 text-sm">Azzam memastikan setiap proyek berjalan lancar, tepat waktu, dan sesuai dengan harapan klien.</p>
+                        </div>
+                        <div class="card-3d bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/100x100/A855F7/FFFFFF?text=DF" alt="Foto profil Citra Lestari" onerror="this.onerror=null;this.src='https://placehold.co/100x100/10B981/FFFFFF?text=CL';">
+                            <h3 class="mt-6 text-xl font-semibold text-white">Daffa</h3>
+                            <p class="mt-1 text-purple-400">Project Manager</p>
+                            <p class="mt-4 text-gray-400 text-sm">Daffa memastikan setiap proyek berjalan lancar, tepat waktu, dan sesuai dengan harapan klien.</p>
+                        </div>
+                         <div class="card-3d bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/100x100/10B981/FFFFFF?text=RZ" alt="Foto profil Citra Lestari" onerror="this.onerror=null;this.src='https://placehold.co/100x100/10B981/FFFFFF?text=RZ';">
+                            <h3 class="mt-6 text-xl font-semibold text-white">Riza</h3>
+                            <p class="mt-1 text-purple-400">Sellezt</p>
+                            <p class="mt-4 text-gray-400 text-sm">Riza adalah otak di balik kekuatan kreatif di balik kampanye yang membangun hubungan kuat antara merek dan audiens. </p>
+                        </div>
+                         <div class="card-3d bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                            <img class="w-24 h-24 rounded-full mx-auto" src="https://placehold.co/100x100/3B82F6/FFFFFF?text=FB" alt="Foto profil Citra Lestari" onerror="this.onerror=null;this.src='https://placehold.co/100x100/10B981/FFFFFF?text=CL';">
+                            <h3 class="mt-6 text-xl font-semibold text-white">Fabia</h3>
+                            <p class="mt-1 text-purple-400">Project Manager</p>
+                            <p class="mt-4 text-gray-400 text-sm">Daffa memastikan setiap proyek berjalan lancar, tepat waktu, dan sesuai dengan harapan klien.</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="mt-20 reveal">
+                     <h2 class="text-3xl font-bold tracking-tight text-center text-white">Nilai-Nilai Kami</h2>
+                     <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4 text-center">
+                         <div class="bg-white/5 p-6 rounded-lg transition-transform duration-300 hover:scale-110 hover:bg-white/10"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg></div><h3 class="mt-5 text-lg font-medium text-white">Inovasi</h3></div>
+                         <div class="bg-white/5 p-6 rounded-lg transition-transform duration-300 hover:scale-110 hover:bg-white/10"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg></div><h3 class="mt-5 text-lg font-medium text-white">Kualitas</h3></div>
+                         <div class="bg-white/5 p-6 rounded-lg transition-transform duration-300 hover:scale-110 hover:bg-white/10"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg></div><h3 class="mt-5 text-lg font-medium text-white">Kolaborasi</h3></div>
+                         <div class="bg-white/5 p-6 rounded-lg transition-transform duration-300 hover:scale-110 hover:bg-white/10"><div class="flex items-center justify-center h-12 w-12 rounded-md bg-purple-500 text-white mx-auto"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg></div><h3 class="mt-5 text-lg font-medium text-white">Integritas</h3></div>
+                     </div>
+                </div>
+            </section>
+            
+            <!-- Services Section -->
+            <section id="services" class="py-24 sm:py-32">
+                <div class="text-center reveal">
+                    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">Layanan <span class="text-purple-400">Unggulan</span> Kami</h1>
+                    <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Dari ide hingga peluncuran, kami menyediakan solusi digital lengkap yang dirancang untuk hasil yang maksimal.</p>
+                </div>
+                <div class="mt-20 max-w-4xl mx-auto reveal">
+                    <div class="space-y-4">
+                        <!-- Accordion Item 1 -->
+                        <div class="accordion-item bg-white/5 border border-white/10 rounded-2xl px-6">
+                            <button class="accordion-header w-full flex justify-between items-center text-left py-5">
+                                <span class="text-xl font-semibold text-white">Pengembangan Web & Aplikasi</span>
+                                <div class="accordion-icon h-8 w-8 flex-shrink-0 flex items-center justify-center rounded-full bg-purple-500/20 text-purple-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                                </div>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="text-gray-400">Kami membangun situs web dan aplikasi yang cepat, aman, dan responsif menggunakan teknologi terkini. Mulai dari landing page, situs perusahaan, hingga platform e-commerce yang kompleks, kami memastikan produk digital Anda unggul di pasar.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 2 -->
+                        <div class="accordion-item bg-white/5 border border-white/10 rounded-2xl px-6">
+                            <button class="accordion-header w-full flex justify-between items-center text-left py-5">
+                                <span class="text-xl font-semibold text-white">Desain UI/UX Interaktif</span>
+                                <div class="accordion-icon h-8 w-8 flex-shrink-0 flex items-center justify-center rounded-full bg-purple-500/20 text-purple-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                                </div>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="text-gray-400">Desain adalah jembatan antara produk dan pengguna. Tim desainer kami berfokus pada penciptaan pengalaman pengguna yang tidak hanya indah secara visual, tetapi juga intuitif, mudah digunakan, dan mampu meningkatkan keterlibatan pengguna.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item 3 -->
+                        <div class="accordion-item bg-white/5 border border-white/10 rounded-2xl px-6">
+                            <button class="accordion-header w-full flex justify-between items-center text-left py-5">
+                                <span class="text-xl font-semibold text-white">Solusi Cloud & DevOps</span>
+                                <div class="accordion-icon h-8 w-8 flex-shrink-0 flex items-center justify-center rounded-full bg-purple-500/20 text-purple-400">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" /></svg>
+                                </div>
+                            </button>
+                            <div class="accordion-content">
+                                <p class="text-gray-400">Percepat siklus pengembangan dan tingkatkan skalabilitas aplikasi Anda dengan layanan cloud dan DevOps kami. Kami membantu Anda dalam migrasi, manajemen infrastruktur, dan otomatisasi untuk operasional yang lebih efisien.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pricing Section -->
+            <section id="pricing" class="py-24 sm:py-32">
+                <div class="text-center reveal">
+                    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">Harga yang <span class="text-purple-400">Transparan</span></h1>
+                    <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Pilih paket yang paling sesuai dengan kebutuhan Anda. Tanpa biaya tersembunyi.</p>
+                </div>
+
+                <!-- Toggle Bulanan/Tahunan -->
+                <div class="mt-16 flex justify-center items-center space-x-4 reveal">
+                    <span class="font-medium text-white">Bulanan</span>
+                    <label for="price-toggle" class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="price-toggle" class="sr-only price-toggle">
+                        <div class="toggle-label w-12 h-6 bg-gray-600 rounded-full transition-colors duration-300">
+                            <div class="toggle-dot absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform duration-300"></div>
+                        </div>
+                    </label>
+                    <span class="font-medium text-white">Tahunan <span class="bg-purple-500/20 text-purple-300 text-xs font-bold px-2 py-1 rounded-full">HEMAT 20%</span></span>
+                </div>
+
+                <!-- Kartu Harga -->
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style="perspective: 1000px;">
+                    <!-- Paket Basic -->
+                    <div class="card-3d bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col reveal">
+                        <h3 class="text-xl font-bold text-white">Starter</h3>
+                        <p class="mt-2 text-gray-400">Ideal untuk proyek pribadi dan startup.</p>
+                        <div class="mt-6">
+                            <span class="text-5xl font-extrabold text-white price-value" data-monthly="450" data-yearly="4320">450</span>
+                            <span class="text-xl font-medium text-gray-400">K <span class="price-period">/bulan</span></span>
+                        </div>
+                        <ul class="mt-8 space-y-4 text-gray-300">
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>1 Halaman Landing Page</li>
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Desain Responsif</li>
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Dukungan Dasar</li>
+                        </ul>
+                        <a href="#contact" class="mt-auto w-full text-center bg-transparent border-2 border-purple-400 text-purple-400 font-semibold rounded-full px-6 py-3 hover:bg-purple-400 hover:text-white transition-all duration-300">Pilih Paket</a>
+                    </div>
+
+                    <!-- Paket Pro (Populer) -->
+                    <div class="card-3d bg-white/10 border-2 border-purple-500 rounded-2xl p-8 flex flex-col relative overflow-hidden transform scale-105 reveal">
+                        <span class="absolute top-0 right-0 bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-bl-lg">PALING POPULER</span>
+                        <h3 class="text-xl font-bold text-white">Pro</h3>
+                        <p class="mt-2 text-gray-400">Sempurna untuk bisnis yang sedang berkembang.</p>
+                        <div class="mt-6">
+                            <span class="text-5xl font-extrabold text-white price-value" data-monthly="890" data-yearly="8544">890</span>
+                            <span class="text-xl font-medium text-gray-400">K <span class="price-period">/bulan</span></span>
+                        </div>
+                        <ul class="mt-8 space-y-4 text-gray-300">
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Hingga 5 Halaman</li>
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Integrasi CMS</li>
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Dukungan Prioritas</li>
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Analitik Dasar</li>
+                        </ul>
+                        <a href="#contact" class="mt-auto w-full text-center bg-purple-500 text-white font-semibold rounded-full px-6 py-3 hover:bg-purple-600 transition-all duration-300">Pilih Paket</a>
+                    </div>
+
+                    <!-- Paket Enterprise -->
+                    <div class="card-3d bg-white/5 border border-white/10 rounded-2xl p-8 flex flex-col reveal">
+                        <h3 class="text-xl font-bold text-white">Enterprise</h3>
+                        <p class="mt-2 text-gray-400">Solusi kustom untuk kebutuhan skala besar.</p>
+                        <div class="mt-6">
+                            <span class="text-5xl font-extrabold text-white">Kustom</span>
+                        </div>
+                        <ul class="mt-8 space-y-4 text-gray-300">
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Halaman Tak Terbatas</li>
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Fitur Kustom</li>
+                            <li class="flex items-center"><svg class="h-5 w-5 text-green-400 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>Dukungan 24/7</li>
+                        </ul>
+                        <a href="#contact" class="mt-auto w-full text-center bg-transparent border-2 border-gray-400 text-gray-400 font-semibold rounded-full px-6 py-3 hover:bg-gray-400 hover:text-white transition-all duration-300">Hubungi Kami</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact" class="py-24 sm:py-32 relative overflow-hidden">
+                <div class="absolute top-1/2 left-1/2 w-96 h-96 bg-purple-900 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob -translate-x-1/2 -translate-y-1/2 z-0"></div>
+                <div class="absolute top-1/2 left-1/4 w-72 h-72 bg-indigo-900 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob" style="animation-delay: -2s;"></div>
+                
+                <div class="relative z-10">
+                    <div class="text-center reveal">
+                        <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white">Hubungi <span class="text-purple-400">Kami</span></h1>
+                        <p class="mt-4 text-lg text-gray-400 max-w-2xl mx-auto">Punya ide brilian atau butuh konsultasi? Kami siap mendengarkan.</p>
+                    </div>
+
+                    <div class="mt-20 max-w-5xl mx-auto grid md:grid-cols-2 gap-16 items-start">
+                        <!-- Kolom Kiri: Info Kontak -->
+                        <div class="reveal">
+                            <h3 class="text-2xl font-bold text-white">Informasi Kontak</h3>
+                            <p class="mt-4 text-gray-400">Jangan ragu untuk menghubungi kami melalui detail di bawah ini. Kami akan merespons secepatnya.</p>
+                            <div class="mt-8 space-y-6 text-gray-300">
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-white/10"><svg class="h-5 w-5 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg></div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">Alamat</h4>
+                                        <p>Jl. Digital Raya No. 123, Jakarta, Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <div class="flex-shrink-0 h-10 w-10 flex items-center justify-center rounded-full bg-white/10"><svg class="h-5 w-5 text-purple-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg></div>
+                                    <div>
+                                        <h4 class="font-semibold text-white">Email</h4>
+                                        <p>hello@studiocode.id</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kolom Kanan: Form -->
+                        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 reveal" style="background-color: #1a1f36;">
+                            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-8">
+                                <input type="hidden" name="access_key" value="8b38ba4b-cb69-4781-b79f-07f4e60adc6a">
+                                <div class="form-group">
+                                    <input type="text" id="name" name="name" class="form-input w-full rounded-md py-3 px-4 text-white placeholder-transparent" placeholder="Nama Lengkap" required>
+                                    <label for="name" class="form-label">Nama Lengkap</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email" class="form-input w-full rounded-md py-3 px-4 text-white placeholder-transparent" placeholder="Alamat Email" required>
+                                    <label for="email" class="form-label">Alamat Email</label>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message" name="message" rows="4" class="form-input w-full rounded-md py-3 px-4 text-white placeholder-transparent" placeholder="Pesan Anda" required></textarea>
+                                    <label for="message" class="form-label">Pesan Anda</label>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full text-center bg-purple-600 text-white font-semibold rounded-full px-6 py-3 hover:bg-purple-700 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                                        Kirim Pesan
+                                    </button>
+                                </div>
+                                <div id="form-success-message" class="text-green-400 text-center mt-4 font-semibold" style="display: none;"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="w-full text-center py-8 text-gray-500 border-t border-white/10 mt-20">
+                <p>&copy; 2024 StudioCode. All Rights Reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="{{ asset('js/script.js') }}"></script>
+</body>
+</html
