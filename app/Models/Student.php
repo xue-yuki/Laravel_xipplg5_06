@@ -15,5 +15,11 @@ class Student extends Model
         'jenis_kelamin',
         'nisn'
     ];
+
+    public function index()
+    {
+        $students = Student::all();
+        return view('admin.students.index', compact('students'));
+    }
 }
 
