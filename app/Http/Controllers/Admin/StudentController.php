@@ -37,8 +37,12 @@ class StudentController extends Controller
             'nis' => 'required|unique:students',
             'nama_lengkap' => 'required',
             'jenis_kelamin' => 'required',
-            'nisn' => 'required|uniuque:students',
+            'nisn' => 'required|unique:students',
         ]);
+
+        Student::create($request->all());
+        return redirect()->route('admin.students.index')
+            ->with('success', 'Student created successfully.');
     }
 
     /**
@@ -46,7 +50,8 @@ class StudentController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $student = Student::findOrFail($id);
+        return view('student.show', compact('student'));
     }
 
     /**
@@ -54,22 +59,36 @@ class StudentController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $student = Student::findOrFail($id);
+        return view('student.edit', compact('student'));
     }
 
-    /**
+    /**x
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $id)
     {
-        //
+        $request->validate([
+            'nis' => 'required|unique:students,nis,'.$id,
+            'nama_lengkap' => 'required',
+            'jenis_kelamin' => 'required',
+            'nisn' => 'required|unique:students,nisn,'.$id,
+        ]);
+
+        $student = Student::findOrFail($id);
+        $student->update($request->all());
+
+        return redirect()->route('admin.students.index')
+            ->with('success', 'Student updated successfully.');     
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Student $student)
     {
-        //
+        $student->delete();
+        return redirect()->route('admin.students.index')
+            ->with('success', 'Student deleted successfully.');
     }
 }
